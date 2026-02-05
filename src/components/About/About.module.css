@@ -1,0 +1,135 @@
+.about {
+    background: var(--bg-color);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 100px;
+}
+
+.imageCol {
+    position: relative;
+}
+
+.imageStack {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+.mainImage {
+    position: relative;
+    z-index: 2;
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    background: var(--bg-secondary);
+}
+
+.mainImage img {
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    display: block;
+}
+
+.accentBorder {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--accent-color);
+    z-index: 1;
+    opacity: 0.3;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.8rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    display: block;
+}
+
+.title {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.description {
+    color: var(--text-muted);
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.description strong {
+    color: var(--text-color);
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.statItem {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.statIcon {
+    color: var(--accent-color);
+    width: 40px;
+    height: 40px;
+}
+
+.statNumber {
+    font-family: var(--font-serif);
+    font-size: 2.2rem;
+    color: var(--text-color);
+    font-weight: 700;
+    line-height: 1;
+    display: block;
+}
+
+.statLabel {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 80px;
+    }
+
+    .imageStack {
+        margin: 0 auto;
+    }
+
+    .contentCol {
+        text-align: center;
+    }
+
+    .statItem {
+        align-items: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .stats {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}

@@ -1,0 +1,170 @@
+.footer {
+    background: var(--bg-tertiary);
+    padding: 100px 0 40px;
+    border-top: 1px solid var(--border-color);
+    position: relative;
+}
+
+.topSection {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 80px;
+}
+
+.brand {
+    flex: 1;
+    max-width: 400px;
+}
+
+.logo {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+.bio {
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+}
+
+.socials {
+    display: flex;
+    gap: 15px;
+}
+
+.socials a {
+    width: 45px;
+    height: 45px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    border-radius: 2px;
+}
+
+.socials a:hover {
+    background: var(--accent-color);
+    color: var(--bg-color);
+    border-color: var(--accent-color);
+    transform: translateY(-5px);
+}
+
+.links {
+    flex: 2;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+    gap: 40px;
+}
+
+.linkCol h4 {
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.linkCol ul {
+    list-style: none;
+}
+
+.linkCol ul li {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    display: flex;
+    justify-content: space-between;
+}
+
+.linkCol ul li a:hover {
+    color: var(--accent-color);
+    padding-left: 5px;
+}
+
+.contactList li {
+    display: flex !important;
+    align-items: flex-start;
+    gap: 12px;
+    line-height: 1.5;
+}
+
+.bottomSection {
+    padding-top: 40px;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottomSection p {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.scrollTop {
+    width: 50px;
+    height: 50px;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.scrollTop:hover {
+    background: var(--accent-color);
+    color: var(--bg-color);
+    transform: translateY(-5px);
+}
+
+@media (max-width: 1200px) {
+    .topSection {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .brand {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .links {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .linkCol ul li {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .contactList li {
+        justify-content: center;
+    }
+
+    .bottomSection {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
