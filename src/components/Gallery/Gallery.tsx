@@ -6,10 +6,10 @@ import styles from './Gallery.module.css';
 const images = [
     'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1000',
     'https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5?q=80&w=1000',
-    'https://images.unsplash.com/photo-1512690196162-421216ea4513?q=80&w=1000',
+    'https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=1000',
     'https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=1000',
     'https://images.unsplash.com/photo-1471466054146-e71bcc0d2bb2?q=80&w=1000',
-    'https://images.unsplash.com/photo-1599351473299-d83950af757e?q=80&w=1000'
+    'https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=1000'
 ];
 
 export default function Gallery() {

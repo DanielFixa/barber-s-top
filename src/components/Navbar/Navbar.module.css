@@ -146,6 +146,10 @@
     .mobileMenu {
         display: block;
     }
+
+    .cta {
+        display: none;
+    }
 }
 
 @media (max-width: 640px) {
